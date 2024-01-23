@@ -1,0 +1,52 @@
+
+.main-home .banner{
+    width: 100%;
+}
+
+.main-home .contenedor{
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+.main-home .titulo-ultima-visita{
+    font-size: var(--titulares);
+    font-family: var(--fuente);
+    text-align: center;
+    color: var(--GrisOscuro);
+}
+
+.main-home .imagen{width: 300px;margin-top: 20px;}
+.main-home .circulo{
+    font-size: 35px;
+    color: var(--Verde);
+    display: inline-block;
+    position: relative;
+    left: 60px;
+    bottom: 20px;
+}
+.main-home .auto{color: var(--Verde);display: inline;position: relative;font-size: 15px;right: 34.5px;bottom: 7px;}
+.main-home .precio{
+    font-family: var(--fuente);
+    font-size: var(--precios);
+    display: inline-block;
+    margin-left: 20px;
+}
+.main-home .descuento{
+    font-family: var(--fuente);
+    font-size: var(--descuentos);
+    display: inline-block;
+    margin: 20px;
+    color: var(--Verde);
+}
+.main-home .producto{
+    font-family: var(--fuente);
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.main-home .ofertas{
+    font-family: var(--fuente);
+    text-align: center;
+    font-size: var(--titulares);
+    color: var(--GrisOscuro);
+}

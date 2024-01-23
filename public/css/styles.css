@@ -1,13 +1,11 @@
 
-logo {
-    background-color: hwb(59 0% 0% / 0);
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-#busqueda {
-    background-color: blue;
-}
+@import "general.css";
+@import "header.css";
+@import "home.css";
+@import "footer.css";
 
-header {
-    background: rgb(255, 255, 0);
-    background-size: 100px;
-}
+
+/* <i class="fa-thin fa-circle"></i> */
+/* <i class="fa-solid fa-truck"></i> */

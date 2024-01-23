@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const port = 3040
+const port = 3050
 
 app.use(express.static("public"))
 
@@ -12,3 +12,4 @@ app.get("/", (req, res) => {
 app.listen(port, ()=>{
     console.log(`Servidor http://localhost:${port} corriendo`)
 })
+

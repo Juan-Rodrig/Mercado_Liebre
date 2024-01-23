@@ -1,0 +1,61 @@
+
+.header{
+    background: var(--Amarillo);
+}
+
+.header .logo{width: 150px;margin: 20px;}
+
+.header .busqueda{}
+
+.header .busqueda .barra{}
+
+.header .busqueda .lupa{
+}
+
+.header p{
+
+font-family: var(--fuente);
+
+font-size: var(--cuerpos);
+}
+.header .burger-menu{
+    
+text-align: center;
+}
+
+.header .burger-menu .menu{
+
+padding: 10px;
+
+background-color: var(--Celeste);
+
+color: white;
+
+display: inline-block;
+
+border-radius: 5px;
+
+margin-bottom: 20px;
+}
+
+a.menu {}
+.header .lista-1{
+    padding: 0px;
+}
+.header .lista-1 .text-redirec{
+    text-decoration: none;
+    color: black;
+    font-family: var(--fuente);
+    font-size: var(--cuerpos);
+}
+
+.header .lista-2{
+    padding: 0px;
+    margin: 20px auto;
+}
+.header .lista-2 .text-redirec{
+    text-decoration: none;
+    color: black;
+    font-family: var(--fuente);
+    font-size: var(--cuerpos);
+}

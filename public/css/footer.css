@@ -1,0 +1,32 @@
+
+.footer-home{
+    text-align: center;
+    background-color: white;
+    margin: 7px;
+}
+.footer-home .iconos{font-size: 30px;color: var(--Celeste);padding-top: 50px;}
+.footer-home .subtitulo{
+    font-family: var(--fuente);
+    color: var(--GrisOscuro);
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.footer-home .textos{}
+.footer-home .texto{
+    font-family: var(--fuente);
+    font-size: var(--cuerpos);
+    width: 250px;
+    height: auto;
+    display: inline-block;
+    color: var(--GrisOscuro);
+}
+
+.footer-home .ult-texto{
+    font-family: var(--fuente);
+    font-size: var(--cuerpos);
+    width: 250px;
+    height: auto;
+    display: inline-block;
+    color: var(--GrisOscuro);
+    margin-top: 30px;
+}

@@ -1,0 +1,27 @@
+
+:root{
+    /* COLORES  */
+--Amarillo: #EAC926;
+--Azul: #03264C;
+--Celeste: #1259c3;
+--GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+--Verde: #39b54a;
+
+    /* FUENTE  */
+--fuente:
+    'Roboto', sans-serif;
+    /* TAMAÑOS TIPOGRAFICOS */
+--cuerpos: 12px;
+--titulares: 24px;
+--precios: 18px;
+--descuentos: 16px;
+--descripciones: 16px;
+}
+
+.body{
+    margin: 0;
+    padding: 0px;
+    border: 0px;
+    background-color: var(--GrisClaro);
+}
