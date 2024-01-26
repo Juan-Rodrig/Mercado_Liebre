@@ -1,4 +1,6 @@
 
+.main-home{}
+
 .main-home .banner{
     width: 100%;
 }
@@ -15,7 +17,7 @@
     color: var(--GrisOscuro);
 }
 
-.main-home .imagen{width: 300px;margin-top: 20px;}
+.main-home .imagen{width: 300px;margin-top: 20px;border-bottom: 1px solid var(--GrisClaro);}
 .main-home .circulo{
     font-size: 35px;
     color: var(--Verde);
@@ -24,7 +26,15 @@
     left: 60px;
     bottom: 20px;
 }
-.main-home .auto{color: var(--Verde);display: inline;position: relative;font-size: 15px;right: 34.5px;bottom: 7px;}
+.main-home .auto{
+    font-size: 15px;
+    border: 1px solid;
+    padding: 6px 5px 5px 6px;
+    border-radius: 30px;
+    position: relative;
+    bottom: 15px;
+    background-color: white;
+}
 .main-home .precio{
     font-family: var(--fuente);
     font-size: var(--precios);

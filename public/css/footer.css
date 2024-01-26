@@ -4,7 +4,7 @@
     background-color: white;
     margin: 7px;
 }
-.footer-home .iconos{font-size: 30px;color: var(--Celeste);padding-top: 50px;}
+.footer-home .iconos{font-size: 2em;color: var(--Celeste);padding-top: 50px;margin: 10px;}
 .footer-home .subtitulo{
     font-family: var(--fuente);
     color: var(--GrisOscuro);
