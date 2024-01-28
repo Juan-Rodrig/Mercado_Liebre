@@ -3,20 +3,23 @@
     background: var(--Amarillo);
 }
 
-.header .logo{width: 150px;margin: 20px;}
+.header .logo{width: 150px;margin: 15px;}
 
-.header .busqueda{}
+.header .busqueda{
+    margin-left: 15px;
+}
 
-.header .busqueda .barra{}
+.header .busqueda .barra{
+}
 
 .header .busqueda .lupa{
 }
 
 .header p{
-
-font-family: var(--fuente);
-
-font-size: var(--cuerpos);
+font-family: var(--fuente);
+font-size: var(--cuerpos);
+text-align: center;
+margin: 10px 0px 25px;
 }
 .header .burger-menu{
     
@@ -41,6 +44,7 @@ margin-bottom: 20px;
 a.menu {}
 .header .lista-1{
     padding: 0px;
+    display: none;
 }
 .header .lista-1 .text-redirec{
     text-decoration: none;
@@ -52,10 +56,60 @@ a.menu {}
 .header .lista-2{
     padding: 0px;
     margin: 20px auto;
+    display: none;
 }
 .header .lista-2 .text-redirec{
     text-decoration: none;
     color: black;
     font-family: var(--fuente);
     font-size: var(--cuerpos);
+}
+
+.header .cuadro-banner{
+}
+
+.header .cuadro-banner .banner{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@media (min-width: 361px){
+    .header{}
+    .header .logo{}
+    .header .busqueda{}
+    .header .busqueda .barra{}
+    .header .busqueda .lupa{}
+    .header p{}
+    .header .burger-menu .menu{
+    display: none;
+}
+    a.menu {}
+    .header .lista-1{
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+    .header .lista-1 .text-redirec{}
+    .header .lista-2{display: block;margin-left: 15px;margin-top: 0px;}
+    .header .lista-2 .text-redirec{}
+    .header .cuadro-banner{}
+    .header .cuadro-banner .banner{}
+}
+
+@media (min-width: 769px){
+    .header{}
+    .header .logo{}
+    .header .busqueda{}
+    .header .busqueda .barra{}
+    .header .busqueda .lupa{}
+    .header p{}
+    .header .burger-menu .menu{}
+    a.menu {}
+    .header .lista-1{}
+    .header .lista-1 .text-redirec{}
+    .header .lista-2{}
+    .header .lista-2 .text-redirec{}
+    .header .cuadro-banner{}
+    .header .cuadro-banner .banner{}
 }

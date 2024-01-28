@@ -27,3 +27,13 @@
 }
 
 /* color: var(--Verde);display: inline;position: relative;font-size: 15px;right: 34.5px;bottom: 7px; */
+
+@media (min-width: 361px){
+    :root{}
+    .body{}
+}
+
+@media (min-width: 769px){
+    :root{}
+    .body{}
+}
