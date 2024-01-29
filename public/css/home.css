@@ -1,21 +1,17 @@
 
 .main-home{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+
 
 .main-home .seccion{
     width: 90%;
 }
-
-
-.main-home .contenedor{
-    background-color: white;
-    margin-bottom: 10px;
-}
-
-
 
 .main-home .titulo-ultima-visita{
     font-size: var(--titulares);
@@ -23,6 +19,13 @@
     color: var(--GrisOscuro);
     margin: 15px 0px;
 }
+
+.main-home .contenedor{
+    background-color: #FFF;
+    margin-bottom: 10px;
+}
+
+
 
 .contenedor .cuadro-imagen{position: relative;}
 
@@ -33,7 +36,7 @@
     display: inline-block;
     position: absolute;
     right: 20px;
-    bottom: -10px;
+    bottom: -15px;
 }
 .main-home .auto{
     font-size: 15px;
@@ -61,6 +64,7 @@
     font-family: var(--fuente);
     margin: 15px;
     color: var(--GrisOscuro);
+    padding-bottom: 15px;
 }
 .main-home .ofertas{
     font-family: var(--fuente);
@@ -69,25 +73,44 @@
     margin: 5px 0px 15px;
 }
 
+.contenedor .redirec{
+    text-decoration: none;
+}
+
+.contenedor .redirec .precio{color: black;}
+
+
 @media (min-width: 361px){
 .main-home{
 }
 .main-home .seccion{
     width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .main-home .contenedor{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 45%;
+    display: block;
 }
-.main-home .titulo-ultima-visita{}
-.contenedor .cuadro-imagen{}
+.main-home .titulo-ultima-visita{
+    display: inline-block;
+    width: 100%;
+}
+.contenedor .cuadro-imagen{
+}
 .cuadro-imagen .imagen{}
 .contenedor .cuadro-imagen .circulo{}
 .main-home .auto{}
-.main-home .precio{}
-.main-home .descuento{}
-.main-home .producto{}
-.main-home .ofertas{
+.main-home .precio{
+    width: 30%;
 }
+.main-home .descuento{}
+.main-home .producto{
+}
+.main-home .ofertas{width: 100%;}
 }
 
 @media (min-width: 769px){
@@ -95,15 +118,35 @@
 .main-home .seccion{
     width: 90%;
 }
-.main-home .contenedor{display: inline-block;width: 100%;}
-.main-home .titulo-ultima-visita{
+.main-home .contenedor{
+    width: 22%;
 }
+.main-home .titulo-ultima-visita{}
 .contenedor .cuadro-imagen{}
-.cuadro-imagen .imagen{}
-.contenedor .cuadro-imagen .circulo{}
-.main-home .auto{}
-.main-home .precio{}
+.cuadro-imagen .imagen{
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 1px solid var(--GrisClaro);
+    display: block;
+}
+.contenedor .cuadro-imagen .circulo{
+}
+.main-home .auto{
+    font-size: 10px;
+}
+.main-home .precio{
+}
 .main-home .descuento{}
 .main-home .producto{}
 .main-home .ofertas{}
+
+
+/* llllll */
+
+.contenedor .redirec{
+    text-decoration: none;
+}
+
+.contenedor .redirec .precio{color: black;}
+
 }

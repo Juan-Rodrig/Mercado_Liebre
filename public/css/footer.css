@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.footer-home .footer-seccion{background-color: white;width: 90%;}
+.footer-home .footer-seccion{background-color: #FFF;width: 90%;}
 
 .footer-home .iconos{font-size: 2em;color: var(--Celeste);padding-top: 50px;margin: 10px;}
 .footer-home .subtitulo{
@@ -50,7 +50,9 @@
 
 @media (min-width: 769px){
     .footer-home{}
-    .footer-home .footer-seccion{}
+    .footer-home .footer-seccion{
+    margin-top: 40px;
+}
     .footer-home .iconos{}
     .footer-home .subtitulo{}
     .footer-home .textos{}

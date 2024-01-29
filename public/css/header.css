@@ -1,25 +1,43 @@
 
 .header{
     background: var(--Amarillo);
+    position: relative;
 }
 
-.header .logo{width: 150px;margin: 15px;}
-
+.header .nav-logo{padding: 15px 15px 0px 15px;width: 30%;}
+.header .nav-logo .logo{
+    width: 50%;
+    margin-top: 10px;
+}
 .header .busqueda{
-    margin-left: 15px;
+    width: 35%;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
 }
 
-.header .busqueda .barra{
-}
+.header .busqueda .barra{border-radius: 5px 0px 0px 5px;border: 0px;padding: 5px;width: 70%;}
 
 .header .busqueda .lupa{
+    color: var(--GrisOscuro);
+    border-radius: 0px 5px 5px 0px;
+    display: inline-block;
+    position: absolute;
+    border: 0px;
+    height: 25px;
+    margin: 0px;
+    padding: 5px;
 }
 
 .header p{
-font-family: var(--fuente);
-font-size: var(--cuerpos);
-text-align: center;
-margin: 10px 0px 25px;
+
+font-family: var(--fuente);
+
+font-size: var(--cuerpos);
+
+text-align: center;
+
+margin: 10px 0px 25px;
 }
 .header .burger-menu{
     
@@ -74,42 +92,98 @@ a.menu {}
     display: block;
 }
 
+.cuadro-banner .nav-banner{}
+
 @media (min-width: 361px){
-    .header{}
-    .header .logo{}
-    .header .busqueda{}
-    .header .busqueda .barra{}
+    .header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header .nav-logo .logo{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+    .header .logo{width: 30%;}
+    .header .busqueda{
+    position: unset;
+    box-sizing: border-box;
+    height: 25px;
+    margin-top: 30px;
+    width: 32%;
+}
+    .header .busqueda .barra{
+    box-sizing: border-box;
+    width: 90%;
+}
     .header .busqueda .lupa{}
-    .header p{}
+    .header p{
+    position: unset;
+    margin-top: 35px;
+    margin-left: 15px;
+}
     .header .burger-menu .menu{
     display: none;
 }
     a.menu {}
     .header .lista-1{
-    display: inline-block;
-    margin-left: 15px;
-    margin-bottom: 0px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: flex-end;
+    margin: 20px;
 }
-    .header .lista-1 .text-redirec{}
-    .header .lista-2{display: block;margin-left: 15px;margin-top: 0px;}
-    .header .lista-2 .text-redirec{}
+    .header .lista-1 .l1{
+    display: inline-block;
+    margin-left: 10px;
+}
+    .header .lista-1 .text-redirec{display: inline-block;}
+    .header .lista-2{display: flex;text-align: right;margin-right: 10px;justify-content: flex-end;box-sizing: border-box;width: 285px;align-items: flex-end;}
+    .header .lista-2 .l2{
+    display: inline-block;
+    margin-right: 10px;
+}
+    .header .lista-2 .text-redirec{
+}
     .header .cuadro-banner{}
     .header .cuadro-banner .banner{}
 }
 
 @media (min-width: 769px){
-    .header{}
-    .header .logo{}
-    .header .busqueda{}
-    .header .busqueda .barra{}
-    .header .busqueda .lupa{}
-    .header p{}
+    .header{
+    display: flex;
+    justify-content: space-between;
+}
+    .header .logo{
+    padding: 15px 15px 0px 15px;
+}
+    .header .busqueda{
+    margin-top: 45px;
+    width: 40%;
+}
+    .header .busqueda .barra{
+    padding: 10px;
+}
+    .header .busqueda .lupa{
+    padding: 10px;
+    height: 36px;
+}
+    .header p{margin-top: 55px;height: 20px;margin-right: 20px;}
     .header .burger-menu .menu{}
     a.menu {}
-    .header .lista-1{}
+    .header .lista-1{
+    margin-top: 40px;
+}
+    .header .lista-1 .l1{}
     .header .lista-1 .text-redirec{}
     .header .lista-2{}
     .header .lista-2 .text-redirec{}
-    .header .cuadro-banner{}
-    .header .cuadro-banner .banner{}
+    .header .cuadro-banner{
+    width: 100%;
+}
+    .header .cuadro-banner .banner{
+    width: 100%;
+    height: 200px;
+}
 }
