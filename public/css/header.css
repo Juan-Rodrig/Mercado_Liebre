@@ -1,22 +1,30 @@
 
 .header{
     background: var(--Amarillo);
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header .nav-logo{padding: 15px 15px 0px 15px;width: 30%;}
+.header .nav-logo{
+    display: inline-block;
+    width: 45%;
+    margin-left: 3%;
+}
 .header .nav-logo .logo{
-    width: 50%;
-    margin-top: 10px;
+    width: 100%;
+    margin-top: 15px;
 }
 .header .busqueda{
-    width: 35%;
+    width: 45%;
     display: inline-block;
-    position: absolute;
-    top: 20px;
+    margin-right: 3%;
+    margin-top: 15px;
 }
 
-.header .busqueda .barra{border-radius: 5px 0px 0px 5px;border: 0px;padding: 5px;width: 70%;}
+.header .busqueda .barra{border-radius: 5px 0px 0px 5px;border: 0px;padding: 5px;width: 76%;}
 
 .header .busqueda .lupa{
     color: var(--GrisOscuro);
@@ -24,24 +32,21 @@
     display: inline-block;
     position: absolute;
     border: 0px;
-    height: 25px;
-    margin: 0px;
     padding: 5px;
 }
 
 .header p{
-
-font-family: var(--fuente);
-
-font-size: var(--cuerpos);
-
-text-align: center;
-
-margin: 10px 0px 25px;
+font-family: var(--fuente);
+font-size: var(--cuerpos);
+text-align: center;
+margin: 15px 0px 25px;
+width: 100%;
 }
 .header .burger-menu{
     
 text-align: center;
+    
+width: 100%;
 }
 
 .header .burger-menu .menu{
@@ -61,7 +66,6 @@ margin-bottom: 20px;
 
 a.menu {}
 .header .lista-1{
-    padding: 0px;
     display: none;
 }
 .header .lista-1 .text-redirec{
@@ -92,13 +96,23 @@ a.menu {}
     display: block;
 }
 
-.cuadro-banner .nav-banner{}
+.nav-banner{
+}
 
-@media (min-width: 361px){
+
+@media (min-width: 426px){
     .header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.header .nav-logo{
+    display: inline-block;
+    width: 25%;
+    margin-left: 3%;
 }
 
 .header .nav-logo .logo{
@@ -106,84 +120,93 @@ a.menu {}
     padding: 0px;
     margin: 0px;
 }
+    
     .header .logo{width: 30%;}
     .header .busqueda{
     position: unset;
     box-sizing: border-box;
     height: 25px;
-    margin-top: 30px;
-    width: 32%;
+    width: 35%;
+    margin: 0px;
 }
     .header .busqueda .barra{
     box-sizing: border-box;
-    width: 90%;
+    width: 91%;
 }
     .header .busqueda .lupa{}
     .header p{
     position: unset;
-    margin-top: 35px;
-    margin-left: 15px;
+    margin: 0px;
+    width: auto;
+    margin-right: 3%;
+}
+    .header .burger-menu{
+    display: none;
 }
     .header .burger-menu .menu{
     display: none;
 }
-    a.menu {}
-    .header .lista-1{
-    display: flex;
-    box-sizing: border-box;
-    align-items: flex-end;
-    margin: 20px;
-}
-    .header .lista-1 .l1{
-    display: inline-block;
-    margin-left: 10px;
-}
-    .header .lista-1 .text-redirec{display: inline-block;}
-    .header .lista-2{display: flex;text-align: right;margin-right: 10px;justify-content: flex-end;box-sizing: border-box;width: 285px;align-items: flex-end;}
-    .header .lista-2 .l2{
-    display: inline-block;
-    margin-right: 10px;
-}
-    .header .lista-2 .text-redirec{
-}
-    .header .cuadro-banner{}
-    .header .cuadro-banner .banner{}
+a.menu {}
+.header .lista-1{padding: 0px;margin: 12px 0px 10px 3%;display: flex;gap: 15px;}
+.header .lista-1 .l1{margin-left: 10px; display: inline-block;}
+.header .lista-1 .text-redirec{}
+.header .lista-2{display: flex;margin: 12px 3% 10px 0px;gap: 15px;}
+.header .lista-2 .l2{}
+.header .lista-2 .text-redirec{}
+.nav-banner{}
+.header .cuadro-banner{}
+.header .cuadro-banner .banner{}
 }
 
 @media (min-width: 769px){
     .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+    header .nav-logo{}
     .header .logo{
     padding: 15px 15px 0px 15px;
 }
     .header .busqueda{
-    margin-top: 45px;
     width: 40%;
+    margin: 0px;
 }
     .header .busqueda .barra{
     padding: 10px;
 }
     .header .busqueda .lupa{
     padding: 10px;
-    height: 36px;
 }
-    .header p{margin-top: 55px;height: 20px;margin-right: 20px;}
-    .header .burger-menu .menu{}
+    .header p{
+    margin: 0px;
+    padding-top: 10px;
+    margin-right: 3%;
+}
+    .header .burger-menu{
+    display: none;
+}
+    .header .burger-menu .menu{
+}
     a.menu {}
-    .header .lista-1{
-    margin-top: 40px;
+    .header .lista-1{margin: 10px 0px 10px 2%;padding: 0px;}
+    .header .lista-1 .l1{
+    display: inline-block;
 }
-    .header .lista-1 .l1{}
-    .header .lista-1 .text-redirec{}
-    .header .lista-2{}
-    .header .lista-2 .text-redirec{}
+    .header .lista-1 .text-redirec{
+}
+    .header .lista-2{
+}
+    .header .lista-2 .text-redirec{
+}
+    .nav-banner{
+}
     .header .cuadro-banner{
+    display: block;
     width: 100%;
+    height: 400p;
 }
-    .header .cuadro-banner .banner{
-    width: 100%;
-    height: 200px;
-}
+    .header .cuadro-banner .banner{height: 100%;}
 }

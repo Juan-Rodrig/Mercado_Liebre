@@ -30,7 +30,8 @@
 
 @media (min-width: 361px){
     :root{}
-    .body{}
+    .body{
+}
 }
 
 @media (min-width: 769px){

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+            <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="/css/styles.css">
+
+    </head>
+
+    <body class="body">
+        <header class="header">
+            <a class="nav-logo" href="./">
+                <img class="logo" src="../images/logo-mercado-liebre.svg" alt="albun">
+            </a>
+            <div class="busqueda">
+                <input class="barra" type="text" placeholder="Buscar productos, marcas">
+                <button class="lupa"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
+
+            <ul class="lista-1" type="none">
+                <li class="l1"><a class="text-redirec" href="/Ofertas">Ofertas</a></li>
+                <li class="l1"><a class="text-redirec" href="/Tiendas Oficiales">Tiendas Oficiales</a></li>
+                <li class="l1"><a class="text-redirec" href="/Vender">Vender</a></li>
+                <li class="l1"><a class="text-redirec" href="/Ayuda">Ayuda</a></li>
+            </ul>
+            <ul class="lista-2" type="none">
+                <li class="l2"><a class="text-redirec" href="./register.html">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                <li class="l2"><a class="text-redirec" href="./login.html">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li class="l2"><a class="text-redirec" href="Mis compras">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+
+            <div class="burger-menu">
+                <a class="menu" href=""><i class="fa-solid fa-bars"></i></a>  
+            </div>
+        </header>
+
+            <main class="register conteiner">
+                <section class="seccion-register">
+                    <h3 class="titulo-registro">Registrarse</h3>
+                    <form action="" method="get" class="formulario row justify-content-center">
+
+                        <!-- NOMBRE Y APELLIDO  -->
+
+                        <div class="mb-3 col-md-6 col-lg-6">
+                            <input class="form-control form-control-sm" type="text" name="nombre" value="" id="nombre" placeholder="Nombre" required>
+
+                        </div>
+                        <div class="mb-3 col-md-6 col-lg-6">
+                            <input class="form-control form-control-sm" type="text" name="nombre" value="" id="apellido" placeholder="Apellido" required>
+                        </div>
+
+
+                        
+                        <!-- NOMBRE DE USUARIO  -->
+                        
+                        <div class="mb-3 col-md-12 col-lg-12">
+                            <input class="form-control form-control-sm" type="text" name="nombre" value="" id="nombre-usuario" placeholder="Nombre De Usuario" required>
+                        </div>
+                        
+                        <!-- EMAIL  -->
+                        
+                        <div class="mb-3 col-md-12 col-lg-12" >
+                            <input class="form-control form-control-sm" type="email" name="email" value="" id="email" placeholder="Email" required>
+                        </div>
+                        
+                        
+                        <!-- DOMICILIO  -->
+                        
+                        <div class="mb-3 col-12 col-md-6 col-lg-6">
+                            <input class="form-control form-control-sm" type="text" class="" name="domicilio" value="" id="domicilio" placeholder="Domicilio">
+                        </div>
+                        <div class="mb-3 col-12 col-md-6 col-lg-6">
+                            <input class="form-control form-control-sm" type="number" class="" name="domicilio" value="" id="numero" placeholder="Numero">
+                        </div>
+                        
+                        <!-- FECHA DE NACIMIENTO  -->
+
+                        <div class="mb-3 col-12 col-md-6 col-lg-8">
+                        <label for="Fecha-N">Fecha de nacimiento</label>
+                        <input class="contenedor form-control form-control-sm" type="date" name="Fecha-N" min="1966-01-01" id="Fecha-N">
+                        </div>
+                        
+                        <!-- PERFIL DE USUARIO -->
+
+                        <hr>
+
+                        <h5 class="mb-3 text-center">Perfil de usuario</h5>
+
+                        <section class="mb-3 row"> 
+                        <div class="mb-3 col-6 col-md-6 col-lg-6">
+                            <input class="form-check-input" type="radio" name="perfil-usuario" id="comprador" required>
+                            <label for="comprador">Comprador</label>
+                        </div>
+                        <div class="mb-3 col-6 col-md-6 col-lg-6">
+                            <input class="form-check-input" type="radio" name="perfil-usuario" id="vendedor" re>
+                            <label for="vendedor">Vendedor</label>
+                        </div>
+                        </section>
+
+                         <!-- SECCION INTERES -->
+
+                         <hr>
+                         
+                         <h5 class="mb-3 text-center">Interes</h5>
+                        <section class="mb-3 row">
+                            <div class="mb-3 col-6 col-lg-6">
+                                <input class="form-check-input" type="checkbox" name="interes" id="electro" value="electro" >
+                                <label for="electro">Electro</label>
+                            </div>
+                            <div class="mb-3 col-6 col-lg-6">
+                                <input class="form-check-input" type="checkbox" name="interes" id="moda" value="moda" >
+                                <label for="moda">Moda</label>
+                            </div>
+                            <div class="mb-3 col-6 col-lg-6">
+                                <input class="form-check-input" type="checkbox" name="interes" id="hogar" value="hogar" >
+                                <label for="hogar">Hogar</label>
+                            </div>
+                            <div class="mb-3 col-6 col-lg-6">
+                                <input class="form-check-input" type="checkbox" name="interes" id="jugueteria" value="Jugueteria" >
+                                <label for="jugueteria">Jugueteria</label>
+                            </div>
+                            <div class="mb-3 col-6 col-lg-6">
+                                <input class="form-check-input" type="checkbox" name="interes" id="vidaSana" value="VidaSana">
+                                <label for="vidaSana">Vida sana</label>
+                            </div>
+                            <div class="mb-3 col-6 col-lg-6">
+                                <input class="form-check-input" type="checkbox" name="interes" id="Otros" value="Otros">
+                                <label for="Otros">Otros</label>
+                            </div>
+                        </section>
+
+                        <!-- SECCION FOTO  -->
+
+                        <hr>
+
+                        <div class="mb-3 col-12">
+                            <figure class="container-preview-img mx-auto">
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/020/765/399/small/default-profile-account-unknown-icon-black-silhouette-free-vector.jpg" alt="avatarDefaul">
+                            </figure>
+                            <label class="col-12 mb-3 text-center" for="fotoUsuario">Foto de usuario</label>
+                            <input class="form-control form-control-sm" type="file" name="foto-usuario" value="fotoUsuario" accept=".jpeg" id="fotoUsuario">
+                        </div>
+
+                        <!-- SECCION CONTRASEÑA  -->
+
+                        <div class="mb-3 col-lg 6">
+                            <input class="form-control form-control-sm" type="password" name="password" placeholder="contraseña" id="contrasenia" required>
+                        </div>
+                        <div class="mb-3 col-lg 6">
+                            <input class="form-control form-control-sm" type="password" name="password" placeholder="Confirmar contraseña" id="confirmarContrasenia" required>
+                        </div>
+
+                        <!-- BOTONES  -->
+
+                        <div class="d-flex gap-3 justify-content-end">
+                            <button class="btn btn-danger" type="reset">Borrar</button>
+                            <a href="./">
+                                <button class="btn btn-success" type="submit">Enviar</button>
+                            </a>
+                        </div>
+                    </form>
+                </section>
+            </main>
+
+            <footer class="footer-home">
+                <section class="footer-seccion">
+                    <article class="article-footer">
+                        <div class="iconos"><i class="fa-solid fa-credit-card"></i></div>
+                        <h4 class="subtitulo">Pagá con targeta o en efectivo</h4>
+                        <p class="texto">Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+                    </article>
+    
+                    <article class="article-footer">
+                        <div  class="iconos"><i class="fa-solid fa-gift"></i></div>
+                        <h4 class="subtitulo">Envio gratis desde los $2.500</h4>
+                        <p class="texto">Solo por estar registrado en MercadoLiebre <br>tenes envios gratis en miles de productos. Es <br> un beneficio de Mercado Puntos.</p>
+                    </article>
+    
+                    
+                    <article class="article-footer">
+                        <div class="iconos"><i class="fa-solid fa-user-shield"></i></div>
+                    <h4 class="subtitulo">Seguridad de princio a fin</h4>
+    
+                    <div class=textos>
+                        <p class="texto">¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedad hacer porque estás <br>siempre protegid@.</p>
+                    </div>
+                    </article>
+                    
+    
+                    <p class="ult-texto">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    
+                </section>
+            </footer>
+
+            <!-- SCRIPT BOOSTRAP     -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        </body>
+    
+        
+    </html>
