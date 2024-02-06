@@ -28,7 +28,7 @@
 
 /* color: var(--Verde);display: inline;position: relative;font-size: 15px;right: 34.5px;bottom: 7px; */
 
-@media (min-width: 361px){
+@media (min-width: 426px){
     :root{}
     .body{}
 }

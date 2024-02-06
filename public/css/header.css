@@ -4,7 +4,7 @@
     position: relative;
 }
 
-.header .nav-logo{padding: 15px 15px 0px 15px;width: 30%;}
+.header .nav-logo{margin: 15px 15px 0px 15px;width: 30%;}
 .header .nav-logo .logo{
     width: 50%;
     margin-top: 10px;
@@ -94,7 +94,7 @@ a.menu {}
 
 .cuadro-banner .nav-banner{}
 
-@media (min-width: 361px){
+@media (min-width: 426px){
     .header{
     display: flex;
     flex-direction: row;
@@ -153,23 +153,28 @@ a.menu {}
 @media (min-width: 769px){
     .header{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
 }
     .header .logo{
     padding: 15px 15px 0px 15px;
 }
     .header .busqueda{
-    margin-top: 45px;
     width: 40%;
+    margin: 0px;
 }
     .header .busqueda .barra{
     padding: 10px;
 }
     .header .busqueda .lupa{
     padding: 10px;
-    height: 36px;
+    height: 35px;
 }
-    .header p{margin-top: 55px;height: 20px;margin-right: 20px;}
+    .header p{
+    height: 25px;
+    padding: 14px 0px 0px 0px;
+    margin-right: 20px;
+}
     .header .burger-menu .menu{}
     a.menu {}
     .header .lista-1{
@@ -177,7 +182,9 @@ a.menu {}
 }
     .header .lista-1 .l1{}
     .header .lista-1 .text-redirec{}
-    .header .lista-2{}
+    .header .lista-2{
+    margin-right: 1%;
+}
     .header .lista-2 .text-redirec{}
     .header .cuadro-banner{
     width: 100%;
