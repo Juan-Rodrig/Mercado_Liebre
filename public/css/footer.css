@@ -20,6 +20,7 @@
     display: inline-block;
     color: var(--GrisOscuro);
 }
+.contenedor-mesaje{}
 
 .footer-home .ult-texto{
     font-family: var(--fuente);
@@ -30,3 +31,4 @@
     color: var(--GrisOscuro);
     margin-top: 30px;
 }
+
